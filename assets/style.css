@@ -134,11 +134,36 @@
     top: 60%;
   }    
   .about-me {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   margin-top: 115px;
- 
   }
+
+  .about-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .ds-color {
+    background-color: #FEC544;
+   
+  }
+  .image {
+     margin-left: -50px; 
+  }
+  .mr-40 {
+    margin-right: 30rem;
+  }
+  
+
+  .about-img  {
+    width: 70%;
+   }
+  /*
   .about-content{
     position: absolute;
     width: 80%;
@@ -162,5 +187,5 @@
   .ds-color {
     background-color: #FEC544;
    
-  }
+  } */
  
