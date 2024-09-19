@@ -4,16 +4,8 @@
     text-decoration: none;
     
 }
-
-/* .position{
-    min-height: 100vh;
-    position: relative;
-   
-} */
 .container {
     position: relative;
-    /* height: 100vh; */
-    /* width: 100%; */
     background-color:#070D1B;
     background-size: contain;
     overflow-y: hidden;
@@ -75,16 +67,22 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
   }
   .info {
     margin-left: 8%;
     margin-top: 7%;
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   }
   .info h1{
     font-size: 70px;
     color: white;
   }
   .info p{
+    margin-top: 5px;
     line-height: 22px;
     color: white;
   }
@@ -118,29 +116,30 @@
   .about-me {
     width: 100vw;
     height: 100vh;
-  margin-top: 115px;
   }
 
   .about-container {
     margin-top: 10px;
     width: 100%;
     display: flex;
+    justify-content: row;
     justify-content: space-between;
     align-items: center;
    
-  }
-  .ds-color {
-    background-color: #FEC544;
-   
-  }
+  } 
+ 
   .image {
-    margin-right: 30rem;
+    margin-right: 18rem;
   }
   .mr-40 {
     margin-right: 30rem;
   }
-  .drop-down {
-    margin-top:12srem;
+  .drop-down{
+    height:700px;
+    width: 20%;
+    background-color: #FEC544;
+    margin: 0;
+    padding: 0;
   }
   .about-info{
    width: 40%; 
@@ -152,10 +151,16 @@
   .about-info p{
     line-height: 22px;
     color: black;
+    margin-top: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .about-img  {
     width: 100%;
+    margin-left: -60px;
    }
    #skills {
     width: 100%;
@@ -188,13 +193,15 @@
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-background-color: black;
+background-color:#070D1B ;
 }
 .wavy-div { 
+  width: 80%;
+  margin-left: 15px;
   position: relative;
   display: flex;
   justify-content:space-between;
-  column-gap: 30px;
+  column-gap: 80px;
   align-items: center ;
   color: white;
 }
@@ -209,13 +216,11 @@ align-items: center;
 -webkit-box-reflect:below 15px linear-gradient(transparent,transparent,rgba(0,0,0,.2));
 }
 .wavy-div .box :hover {
-color: yellow;
+color: #070D1B;
 }
 .wavy-div .box::before{
    content: '';
    position: absolute;
-   /* top: -10px;
-   left: -10px; */
    width: 100%;
    height: 100%;
    border: 4px solid  #FEC544;
@@ -241,8 +246,6 @@ transition: 0.5s;
 .wavy-div .box::after{
   content: '';
   position: absolute;
-  /* top: -10px;
-  left: -10px; */
   width: 50%;
   height: 100%;
   border: 4px solid  #FEC544;
@@ -255,23 +258,44 @@ transition: 0.5s;
 .form {
   display: flex;
   min-height: 100vh;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  background: black;
+  background:#070D1B ;
 
 }
 .common {
   width: 680px;
+  margin-left: -38px;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+   row-gap: 20px;
+
+}
+button {
+  
+  color: white;
+  margin-left: 19px;
+  border: 2px solid white;
+  background: transparent;
+  width: 69%;
+  padding: 0 30px;
+  line-height: 80px;
+  border-radius: 10px;
 }
 .entryarea {
   position: relative;
   height: 80px;
   line-height: 80px;
-  /* color: white; */
+   color: white; 
+   display: flex;
+   flex-direction: column;
+  justify-content: space-between;
 }
 input {
   position: absolute;
-  width:100% ;
+  width:60% ;
   outline: none;
   font-size: 2.2em;
   padding: 0 30px;
@@ -289,25 +313,91 @@ font-size: 1.6em;
 color: white;
 padding: 0 25px;
 margin: 0 20px;
-background-color: black;
 transition: 0.2s ease;
 }
 
 input:focus,
 input:valid {
   color: yellow;
-  border: 4px solid yellow;
+  border: 4px solid #FEC544;
 }
 input:focus + .labelline,
 input:valid + .labelline{
-  color: yellow;
+  color: #FEC544 ;
   height: 30px;
   line-height: 30px;
   padding: 0 12px;
   transform: translate(-15px,-16px) scale(0.88);
   z-index: 1111;
-  background-color: black;
+  background-color: #070D1B;
 
 } 
+.confirm {
+  width: 40%;
+  padding-left: 45px;
 
- 
+}
+.red {
+  color: #FEC544;
+}
+.play {
+  margin-left: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.footer-content{
+  width: 100%;
+  min-height: 50vh;
+  background-color: #070D1B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+ .contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+ }
+ .footer-icon {
+  margin-bottom: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .play ul{
+  display: flex;
+ }
+ .play ul li {
+  list-style: none;
+  margin: 0 15px;
+ }
+ .play ul li .fa-brands {
+  font-size: 30px;
+  line-height: 60px;
+  color:  #070D1B;
+ }
+ .play ul li a {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FEC544;
+  text-align: center;
+ }
+ .trans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+ }
+ .copy-right {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+ }
