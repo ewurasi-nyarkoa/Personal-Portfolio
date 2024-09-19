@@ -2,17 +2,24 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    
 }
 
-.position{
-    min-height: 40vh;
+/* .position{
+    min-height: 100vh;
     position: relative;
    
-}
+} */
 .container {
     position: relative;
-    min-height: 40vh;
+    /* height: 100vh; */
+    /* width: 100%; */
     background-color:#070D1B;
+    background-size: contain;
+    overflow-y: hidden;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
    
   }
   .vl {
@@ -64,7 +71,8 @@
     justify-content: space-between;
   }
   .content {
-    height: 70vh;
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -99,44 +107,14 @@
   }
   .image-box img {
     height: 100;
+    width: 50;
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
   
-  /* .wave {
-    position: absolute;
-    height: 143px;
-    width: 100%;
-    background: #070D1B;
-    bottom: 0;
-  }
-  
-  .wave::before, .wave::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 50% 100%;
-    overflow-x: hidden;
-  }
-  
-  .wave::before {
-    width: 55%;
-    height: 100%;
-    background-color:#070D1B;
-    right: -1.5%;
-    top: 40%;
-    overflow-x: hidden;
-  }
-  .wave::after {
-    width: 55%;
-    height: 109%;
-    background-color: #fff;
-    left: -1.5%;
-    top: 60%;
-    overflow-x: hidden;
-  }     */
+
   .about-me {
     width: 100vw;
     height: 100vh;
@@ -145,7 +123,7 @@
 
   .about-container {
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -201,42 +179,79 @@
   box-shadow: 5px;
   text-align: center;
  }
-   /* .trans { 
-    background-color: #070D1B;
-    position: absolute;
-    margin-bottom: 5rem;
-   padding: 0;
-    transform: translateY(-50);
-   
-  
-    color: #FEC544;
-    text-transform:uppercase ;
-    text-shadow: o 5px 10px rgba(0,0,0,1);
-    mix-blend-mode: overlay;
-   }
-
-  .about-content{
-    position: absolute;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-.image {
-  position: relative;
-  right: 15px;
+ .skills {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: black;
 }
-  .about-img  {
-   width: 70%;
-  }
-  .box{
-   margin-top: 50px;
-    height: 54px;
-    width: 17%;
-  }
-  .ds-color {
-    background-color: #FEC544;
+.wavy-div { 
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+  column-gap: 30px;
+  align-items: center ;
+  color: white;
+}
+.wavy-div .box {
+position: relative;
+height: 400px;
+width: 300px;
+display: flex;
+justify-content: space-between;
+column-gap: 10px;
+align-items: center;
+-webkit-box-reflect:below 15px linear-gradient(transparent,transparent,rgba(0,0,0,.2));
+}
+.wavy-div .box :hover {
+color: yellow;
+}
+.wavy-div .box::before{
+   content: '';
+   position: absolute;
+   /* top: -10px;
+   left: -10px; */
+   width: 100%;
+   height: 100%;
+   border: 4px solid  #FEC544;
+   background: black; 
+   filter: url("#wavy");
+
+}
+.wavy-div .box .content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  text-align: center;
+   transition: 0.5s;
+
+}
+.wavy-div .box:hover::before {
+background:white ;
+transition: 0.5s;
+}
+.wavy-div .box::after{
+  content: '';
+  position: absolute;
+  /* top: -10px;
+  left: -10px; */
+  width: 50%;
+  height: 100%;
+  border: 4px solid  #FEC544;
+  border-right: none;
+  background: black; 
+  background: rgba(255,255,255,.1);
+  filter: url("#wavy");
+
+}
    
-  } */
+
  

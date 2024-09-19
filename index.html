@@ -6,11 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/2414101aec.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
     
-   <section class="container">
+  <section class="container">
     <div class="position">
         <nav class="nav-list">
           <div><h3 class="text-yellow"> AYANFUL</h3></div>
@@ -43,14 +43,12 @@
             <img src="assets/images/main_image-removebg-preview.png" class="main-img">
           </div>
         </section>
-      
-    <div class="wave"></div>
   </section>
   <section class="about-me">
  
     <div class="about-container">
-    <div class="w-[15%] pl-2 drop-down">
-        <div class=" h-[50px] w-full ds-color">
+    <div class="drop-down">
+        <div class="ds-color">
      </div>
     </div>
     <div class="image">
@@ -66,34 +64,47 @@
       </p>
     </div>
   </div>
-
   </section>
-  <section id="skills">
-    <p class="skills-p1">Explore My</p>
-    <h1 class="sub-title">My <span>skills</span></h1>
- <div class="skills-container">
-  <div class="skills-details"> 
-   <p>HTML</p>
-   <p><i class="fa-regular fa-circle-check"></i></p>
-   <P>It used to organize content on the internet. Through the definition of components like headings, paragraphs, links, and images, it offers the fundamental structure for webpages. HTML is a necessary ability for building responsive and user-friendly websites since it works with JavaScript for interactivity and CSS for styling. I utilize HTML to create user-friendly</P>
-   <p>Experience</p>
-   </div>
-   <div class="skills-details"> 
-    <p>CSS</p>
+  <section class="skills">
+    <div class="wavy-div">
+      <div class="box">
+          <div class="content">
+              <h2>HTML</h2>
+              <p>Experience
+              </p>
+              <p><i class="fa-regular fa-circle-check"></i></p>
+              <p>It used to organize content on the internet. Through the definition of components like headings, paragraphs, links, and images, it offers the fundamental structure for webpages. HTML is a necessary ability for building responsive and user-friendly websites since it works with JavaScript for interactivity and CSS for styling. I utilize HTML to create user-friendly</P>
+                <p>Experience
+              </p>
+          </div>
+      </div>
+      <div class="box">
+          <div class="content">
+            <h2>CSS</h2>
     <p><i class="fa-regular fa-circle-check"></i></p>
     <P>It gives you exact control over a website's color scheme, fonts, layout, and overall style, making sure that it looks well on all kinds of screens. I use CSS to create fresh, simple, and dynamic designs that enhance accessibility and usability while also adding a modern touch that makes websites come to life.</P>
-    <p>Experience</p>
-    </div>
-    <div class="skills-details"> 
-      <p>JAVASCRIPT</p>
-      <p><i class="fa-regular fa-circle-check"></i></p>
-      <P>It makes features like form validation, animations, real-time updates, and interactive components that encourage user interaction possible. I utilize JavaScript to create streamlined, user-friendly, and responsive web applications that improve client-side functionality and performance.</P>
-      <p>Basic</p>
+  
+          </div>
       </div>
-
- </div>
-
+      <div class="box">
+          <div class="content">
+            <h2>JAVASCRIPT</h2>
+            <p><i class="fa-regular fa-circle-check"></i></p>
+            <P>It makes features like form validation, animations, real-time updates, and interactive components that encourage user interaction possible. I utilize JavaScript to create streamlined, user-friendly, and responsive web applications that improve client-side functionality.
+          </div>
+      </div>
   </section>
+  <svg>
+      <filter id="wavy">
+          <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2"></feTurbulence>
+          <animate attributeName="baseFrequency" dur="60s" values="0.2;0.05;0.02" repeatCount="indefinite" />
+              <feDisplacementMap in="SourceGraphic" scale="30">
+
+              </feDisplacementMap>
+
+      </filter>
+  </svg>
+</div>
 
 
 </body>
