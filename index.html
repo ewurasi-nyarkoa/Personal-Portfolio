@@ -110,11 +110,11 @@
   
   <svg>
       <filter id="wavy">
-          <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2"></feTurbulence>
-          <animate attributeName="baseFrequency" dur="60s" values="0.2;0.05;0.02" repeatCount="indefinite" />
-              <feDisplacementMap in="SourceGraphic" scale="30">
+          <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+          <animate attributeName="baseFrequency" dur="60s" values="0.2;0.05;0.02" repeatCount="indefinite"></animate></feTurbulence>
+              <feDisplacementMap in="SourceGraphic" scale="30"/>
 
-              </feDisplacementMap>
+             
 
       </filter>
   </svg>
@@ -136,7 +136,7 @@
   </div>
   <div class="common">
       <div class="entryarea">
-          <input type="text" id="name" class="labelline" required>
+          <input type="text" id="name" class="labelline" required>  
        <label for="email" class="labelline text-white">Name</label>
       </div>
       <div class="entryarea">
