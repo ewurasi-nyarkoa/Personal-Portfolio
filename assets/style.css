@@ -4,6 +4,10 @@
     text-decoration: none;
     
 }
+
+body{
+  font-family: "Josefin Sans", sans-serif;
+}
 .container {
     position: relative;
     background-color:#070D1B;
@@ -108,8 +112,8 @@
     width: 50;
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-30%);
+    bottom: 180px;
+    transform: translateX(-90%);
   }
   
 
@@ -189,15 +193,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
+  /* display: flex;
 justify-content: center;
 align-items: center;
-min-height: 100vh;
+min-height: 100vh;*/
 background-color:#070D1B ;
 }
 .wavy-div { 
   width: 80%;
-  margin-left: 15px;
+  margin-left: 214px;
   position: relative;
   display: flex;
   justify-content:space-between;
@@ -257,12 +261,14 @@ transition: 0.5s;
 }
 .form {
   display: flex;
-  min-height: 100vh;
-  width: 100%;
+  /* min-height: 100vh;
+  width: 100%; */
   justify-content: space-between;
   align-items: center;
   background:#070D1B ;
-
+}
+.last-sec{
+ background:#070D1B ;
 }
 .common {
   width: 680px;
@@ -355,6 +361,7 @@ input:valid + .labelline{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 142px;
 }
  .contact-info {
   display: flex;
@@ -401,3 +408,67 @@ input:valid + .labelline{
   font-weight: 700;
   font-style: normal;
  }
+ /* .about-t {
+  position: relative;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text-b {
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
+
+.text-f {
+  color: #FEC544; 
+}
+.postion-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
+}
+
+.text-stroke{
+  -webkit-text-stroke:1px  #FEC544;
+  font-size: calc(1rem + 8.5vw);
+}
+
+.text-section{
+  display: flex;
+  max-width: 640px;
+  margin-left:auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 87px;
+}
+.about-header-wrapper2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 87px;
+}
+
+.text-2xl{
+  font-size: 30px;
+}
+.text-section2{
+  display: flex;
+   max-width: 640px;
+  margin-left:auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
